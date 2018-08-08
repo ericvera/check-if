@@ -1,0 +1,25 @@
+{
+  "name": "check-if",
+  "version": "1.0.0",
+  "description": "Input validation for Apollo Server.",
+  "main": "index.js",
+  "license": "MIT",
+  "author": "Eric Vera <hey@itsmeeric.com>",
+  "keywords": [
+    "firebase",
+    "graphql",
+    "apollo",
+    "cloud functions",
+    "apollo-server",
+    "validate",
+    "validation"
+  ],
+  "repository": {
+    "url": "https://github.com/ericvera/check-if",
+    "type": "git"
+  },
+  "prettier": {
+    "semi": false,
+    "singleQuote": true
+  }
+}
