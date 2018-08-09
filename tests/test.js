@@ -1,8 +1,8 @@
 // Add stuff here
-const checkIf = require("../check-if");
+const checkIf = require('../')
 
 try {
-  checkIf.isValidDateInMs("0909uo", "someDate");
+  checkIf.containsAllProperties({ a: 34 }, ['a', 'b'])
 } catch (error) {
-  console.log("error:", error.extensions);
+  console.log('error:', error.message)
 }
