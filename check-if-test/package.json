@@ -1,0 +1,11 @@
+{
+  "name": "check-if-test",
+  "version": "1.0.0",
+  "description": "Test package for check-if",
+  "private": true,
+  "dependencies": {
+    "apollo-server": "^2.0.0",
+    "check-if": "^0.0.1",
+    "graphql": "^0.13.2"
+  }
+}
