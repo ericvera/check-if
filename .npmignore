@@ -1,0 +1,4 @@
+# `tests` directory as it has its own package.json to deal with 
+# peerDependencies (need to be included as a dependency to be
+# able to test).
+tests
