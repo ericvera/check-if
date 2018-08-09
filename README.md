@@ -13,9 +13,17 @@ A collection of functions to validate the input received in Apollo GraphQL Serve
 
 ## Sample
 ```javascript
-//TODO: Add samples
+const checkIf = require('check-if')
+
+// [your code here...]
+
+// Throw UserInputError if it is not a valid date in ms.
+checkIf.isValidDateInMs(value, argumentName)
 ```
 
 # Functions
-`//TODO: Add a list of all the functions`
+Functions | Description | Exception
+--------- | ----------- | ---------
+`isValidDateInMs(value, argumentName)` | Validates that:</br>- value is not Nil</br>- `typeof value` is `number`</br>- value can be parsed by `new Date(value)` | `UserInputError`
+
 
