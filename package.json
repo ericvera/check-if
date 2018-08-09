@@ -1,14 +1,10 @@
 {
   "name": "check-if",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Input validation for Apollo Server.",
   "main": "index.js",
   "license": "MIT",
   "author": "Eric Vera <hey@itsmeeric.com>",
-  "files": [
-    "../LICENSE",
-    "../README.md"
-  ],
   "keywords": [
     "firebase",
     "graphql",
