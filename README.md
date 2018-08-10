@@ -3,11 +3,11 @@
 
 # check-if
 
-Input validation for Apollo Server.
+Input validation to used in a server.
 
 # Details
 
-A collection of functions to validate the input received in Apollo GraphQL Server. When a validation fails the function throw one of Apollo Server's exceptions which are appropriately processed by Apollo Server. For more details on the errors see https://www.apollographql.com/docs/apollo-server/v2/features/errors.html.
+A collection of functions to validate the input received in a server application.
 
 # Usage
 
@@ -22,13 +22,16 @@ const checkIf = require('check-if')
 
 // [your code here...]
 
-// Throw UserInputError if it is not a valid date in ms.
-checkIf.isValidDateInMs(value, argumentName)
+if (!checkIf.isDateInMs('2043-01-01')) {
+  // Logic to handle invalid input goes here
+}
 ```
 
 # Functions
 
-| Functions                                   | Description                                                                                                            | Exception        |
-| ------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------- | ---------------- |
-| `containsAllProperties(object, properties)` | Validate that each of the property names listed in `properties` are defined in `object`                                | `UserInputError` |
-| `isValidDateInMs(value, argumentName)`      | Validates that:</br>- value is not Nil</br>- `typeof value` is `number`</br>- value can be parsed by `new Date(value)` | `UserInputError` |
+| Functions                                | Description                                                                                                                                                              |
+| ---------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `containsProperties(object, properties)` | Returns false if any of the property names listed in `properties` are not in `object`                                                                                    |
+| `isDateInMs(value)`                      | Returns false if:</br>- value is not a number</br>- value can not be parsed by `new Date(value)`                                                                         |
+| `isFirestoreId(id)`                      | Returns false if:</br>- not a valid Firestore id (20 characters a-z, A-Z, and 0-9)                                                                                       |
+| `isShortDate(value)`                     | Expects a date with the format (YYYY-MM-DD). Returns false if:</br>- value is not a string with exactly 10 characters</br>- value can not be parsed by `new Date(value)` |

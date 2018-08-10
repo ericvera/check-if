@@ -1,7 +1,11 @@
-const containsAllProperties = require('./lib/containsAllProperties')
-const isValidDateInMs = require('./lib/isValidDateInMs')
+const containsProperties = require('./lib/containsProperties')
+const isDateInMs = require('./lib/isDateInMs')
+const isFirestoreId = require('./lib/isFirestoreId')
+const isShortDate = require('./lib/isShortDate')
 
 module.exports = {
-  containsAllProperties,
-  isValidDateInMs
+  containsProperties,
+  isDateInMs,
+  isFirestoreId,
+  isShortDate
 }
