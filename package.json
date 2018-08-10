@@ -1,6 +1,6 @@
 {
   "name": "check-if",
-  "version": "0.0.6",
+  "version": "0.1.0",
   "description": "Input validation for Apollo Server.",
   "main": "index.js",
   "license": "MIT",
