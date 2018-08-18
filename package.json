@@ -19,6 +19,8 @@
     "type": "git"
   },
   "devDependencies": {
+    "@firebase/app-types": "^0.3.2",
+    "firebase-admin": "^6.0.0",
     "jest": "^23.4.2"
   },
   "scripts": {

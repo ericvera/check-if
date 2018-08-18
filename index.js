@@ -3,6 +3,7 @@ const containsProperties = require('./lib/containsProperties')
 const containsUpdatedProperties = require('./lib/containsUpdatedProperties')
 const isDateInMs = require('./lib/isDateInMs')
 const isFirestoreId = require('./lib/isFirestoreId')
+const isFirestoreTimestamp = require('./lib/isFirestoreTimestamp')
 const isNonDeletedObject = require('./lib/isNonDeletedObject')
 const isNonEmptyObject = require('./lib/isNonEmptyObject')
 const isShortDate = require('./lib/isShortDate')
@@ -14,6 +15,7 @@ module.exports = {
   containsUpdatedProperties,
   isDateInMs,
   isFirestoreId,
+  isFirestoreTimestamp,
   isNonDeletedObject,
   isNonEmptyObject,
   isShortDate,
