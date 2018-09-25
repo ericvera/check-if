@@ -1,5 +1,6 @@
 const areInSync = require('./lib/areInSync')
 const areInSyncFirestoreTimestamps = require('./lib/areInSyncFirestoreTimestamps')
+const containsExactProperties = require('./lib/containsExactProperties')
 const containsProperties = require('./lib/containsProperties')
 const containsUpdatedProperties = require('./lib/containsUpdatedProperties')
 const isDateInMs = require('./lib/isDateInMs')
@@ -15,6 +16,7 @@ const isTrimmedNonEmptyString = require('./lib/isTrimmedNonEmptyString')
 module.exports = {
   areInSync,
   areInSyncFirestoreTimestamps,
+  containsExactProperties,
   containsProperties,
   containsUpdatedProperties,
   isDateInMs,
